@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import React from "react";
 import { Card } from "@/components/ui/card"; 
-import photo from "@/assets/FAQ Image.svg";
+import photo from "@/assets/courses.svg";
 import avatars from '@/assets/Student Avatars.svg'
 
 export const Courses: React.FC = () => {

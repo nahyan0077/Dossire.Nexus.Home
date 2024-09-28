@@ -23,7 +23,7 @@ export const Navbar: React.FC = () => {
 
         <div className={`${isMenuOpen ? 'flex gap-10 min-h-screen pl-10' : 'hidden'} md:flex flex-col md:flex-row absolute md:relative top-full left-0 right-0 md:top-auto bg-custom-violet md:bg-transparent p-4 md:p-0 space-y-4 md:space-y-0 md:space-x-8 `}>
           <a href="#" className="hover:text-gray-300 text-sm flex items-center justify-between">
-          <span className="w-1 h-1 bg-red-500 rounded-full mr-3"></span>
+          <span className="hidden md:block w-1 h-1 bg-red-500 rounded-full mr-3"></span>
             Courses { !isMenuOpen && <IoIosArrowDown className="ml-1" />}
           </a>
           <a href="#" className="hover:text-gray-300 text-sm flex items-center justify-between">

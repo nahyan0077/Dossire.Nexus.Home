@@ -6,7 +6,7 @@ export const OverView: React.FC = () => {
     const elements = ["User research", "Wireframing", "Prototyping", "Usability testing"];
 
     return (
-        <div className="p-8 bg-white">
+        <div className="p-8 ">
 
             <h2 className="text-xs font-semibold text-gray-500 tracking-wide uppercase">Overview</h2>
 

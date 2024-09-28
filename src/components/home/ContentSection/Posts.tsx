@@ -11,7 +11,7 @@ export const Posts : React.FC = () => {
 
     return (
         <>
-        <div className="p-8">
+        <div className="p-8 ">
 
             <h2 className="text-xs font-semibold text-gray-500 tracking-wide uppercase">Posts</h2>
             <h2 className="text-3xl font-bold mt-2 mb-4">Learn live with industry experts</h2>

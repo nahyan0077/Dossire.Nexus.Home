@@ -1,5 +1,6 @@
 import React from "react";
 import { OverView } from "./ContentSection/OverView";
+import { Posts } from "./ContentSection/Posts";
 
 export const ContentSection : React.FC = () => {
     return (
@@ -10,6 +11,7 @@ export const ContentSection : React.FC = () => {
                 </div>
                 <div className="w-3/4 " >
                     <OverView />
+                    <Posts />
                 </div>
             </section>
         </>

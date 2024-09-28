@@ -13,7 +13,7 @@ export const Courses: React.FC = () => {
                     <h2 className="text-xs font-semibold text-gray-400 tracking-wide">
                         MORE COURSES ON ART AND ENTREPRENEURSHIP
                     </h2>
-                    <h2 className="text-3xl font-semibold mt-2 mb-2">
+                    <h2 className="text-2xl font-semibold mt-2 mb-2">
                         Accelerate your career
                     </h2>
                     <h2 className="text-3xl font-semibold mt-2 mb-4">
@@ -24,6 +24,9 @@ export const Courses: React.FC = () => {
                         engineering or product role with the accountability of a live class
                     </p>
                     <Button> View all courses </Button>
+                </div>
+                <div>
+
                 </div>
 
                 {/* Course cards  */}
@@ -37,20 +40,16 @@ export const Courses: React.FC = () => {
                                 </span>
                             </div>
                             <div className="p-4">
-                                <h3 className="text-sm font-semibold mb-2 text-gray-900">
-                                Master Digital Product Design: UX Research & UI Design
+                                <h3 className="text-sm font-semibold mb-2 text-gray-900">  
+                                    Master Digital Product Design: UX Research & UI Design
                                 </h3>
                                 <div className="flex justify-between items-center" >
                                     <div>
                                         <img src={avatars} alt="" />
                                     </div>
                                     <div>
-                                        <p className="text-xs text-gray-500 mt-2">
-                                            Starting from
-                                        </p>
-                                        <p className="text-sm font-semibold text-gray-900">
-                                        ₹74,700
-                                        </p>
+                                        <p className="text-xs text-gray-500 mt-2"> Starting from </p>
+                                        <p className="text-sm font-semibold text-gray-900"> ₹74,700 </p>
                                     </div>
                                 </div>
                             </div>

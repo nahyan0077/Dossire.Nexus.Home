@@ -6,12 +6,11 @@ import { Button } from "../ui/button";
 
 export const ContentSection: React.FC = () => {
     return (
-        <section className="flex flex-col md:flex-row p-10">
+        <section className="flex flex-col md:flex-row p-10 bg-slate-50">
             {/* Sidebar */}
-            <div className="w-full md:w-1/4 mb-6 md:mb-0">
+            <div className="w-full md:w-1/4 mb-6 md:mb-0 ">
                 <div 
-                    className="bg-white rounded-3xl shadow-md p-6 flex flex-col border-l-2 mt-10 sticky top-20"
-                    style={{ maxHeight: 'calc(200vh - 40px)', overflowY: 'auto' }}
+                    className="bg-white rounded-3xl shadow-md p-6 flex flex-col border-l-2 mt-10 sticky top-40"
                 >
                     <h2 className="text-xl font-semibold mb-4 flex items-center">
                         <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>

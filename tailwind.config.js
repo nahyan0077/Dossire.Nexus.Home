@@ -53,7 +53,11 @@ export default {
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
   			},
-        "custom-violet" : "#17101B"
+        "custom-violet" : "#17101B",
+        fontFamily: {
+          allerta: ['Allerta', 'sans-serif'],
+        },
+  
   		}
   	}
   },

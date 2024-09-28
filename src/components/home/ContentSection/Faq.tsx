@@ -46,7 +46,7 @@ export const Faq: React.FC = () => {
                             </div>
                         </div>
                         <div className="w-1/2 hidden md:block">
-                            <img src={faqImage} alt="Student with laptop" className="rounded-lg" />
+                            <img src={faqImage} alt="Student with laptop" className="rounded-lg ml-24" />
                         </div>
                     </div>
                 </CardContent>

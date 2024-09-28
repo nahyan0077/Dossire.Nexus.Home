@@ -6,7 +6,7 @@ import { Button } from "../ui/button";
 export const HeroSection: React.FC = () => {
   return (
     <section className="bg-custom-violet flex flex-col md:flex-row items-center p-6 md:p-8">
-      <div className="w-full md:w-1/3 text-white space-y-4 md:space-y-6 md:px-10">
+      <div className="w-full md:w-1/3 text-white space-y-4 md:space-y-6 md:px-10 lg:-mt-24 ">
       <h2 className="text-xs text-gray-500" ><span> LIVE COURSE &#903; </span>  ART, DESIGN ENTREPRENURSHIP</h2>
         <h1 className="text-4xl md:text-4xl font-semibold">Artpreneur Program</h1>
 

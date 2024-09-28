@@ -18,7 +18,7 @@ export const OverView: React.FC = () => {
 
 
             <div className="flex flex-col md:flex-row  mb-4 items-center">
-                <p className="text-base font-semibold mr-14">Skills you will learn:</p>
+                <p className="text-xs font-semibold mr-44 lg:mr-8 mb-2">Skills you will learn:</p>
                 <div className="flex flex-wrap gap-2">
                     {elements.map((text) => (
                         <button

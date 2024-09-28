@@ -18,7 +18,7 @@ export const Faq: React.FC = () => {
                 Chances are at this stage you have a couple questions. We encourage our students to ask questions directly and you can arrange a quick call with us anytime.
             </p>
             <div className="space-y-2">
-                {[...Array(5)].map((_, index) => (
+                {[...Array(5)].map((_) => (
                     <Accordion type="single" collapsible className="bg-white rounded-lg shadow-md">
                     <AccordionItem value="item-1">
                         <AccordionTrigger className="px-4 py-3  hover:no-underline">Do I need UX/UI experience?</AccordionTrigger>

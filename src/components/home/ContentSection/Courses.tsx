@@ -9,7 +9,7 @@ export const Courses: React.FC = () => {
     return (
         <>
             <div className="p-8">
-                <div className="w-full md:w-1/2">
+                <div className="w-full md:w-1/3">
                     <h2 className="text-xs font-semibold text-gray-400 tracking-wide">
                         MORE COURSES ON ART AND ENTREPRENEURSHIP
                     </h2>
@@ -31,7 +31,7 @@ export const Courses: React.FC = () => {
                     {[...Array(4)].map((_, index) => (
                         <Card key={index} className="shadow-md rounded-md">
                             <div className="relative">
-                                <img src={photo} alt={`Master Digital `} width={400} height={300} className="rounded-t-md" />
+                                <img src={photo} alt={`Master Digital `} width={400} height={300} className="rounded-t-md " />
                                 <span className="absolute top-2 left-2 bg-purple-700 text-white text-xs font-semibold px-2 py-1 rounded-full">
                                     Course
                                 </span>

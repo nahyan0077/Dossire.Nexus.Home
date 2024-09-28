@@ -14,19 +14,19 @@ export const Faq: React.FC = () => {
         <div className="p-8 ">
             <h2 className="text-xs font-semibold text-gray-500 tracking-wide uppercase">FAQ</h2>
             <h2 className="text-3xl font-bold mt-2 mb-4">Got a question about our course?</h2>
-            <p className="text-base text-gray-700 mb-6">
+            <p className="text-xs ml-2 text-gray-700 mb-6">
                 Chances are at this stage you have a couple questions. We encourage our students to ask questions directly and you can arrange a quick call with us anytime.
             </p>
             <div className="space-y-2">
                 {[...Array(5)].map((_) => (
-                    <Accordion type="single" collapsible className="bg-white rounded-lg shadow-md">
-                    <AccordionItem value="item-1">
-                        <AccordionTrigger className="px-4 py-3  hover:no-underline">Do I need UX/UI experience?</AccordionTrigger>
-                        <AccordionContent className="px-10 py-2">
-                            UX/UI experience is essential for design-specific roles, other positions benefit from at least a basic understanding of these principles. Investing time in learning the fundamentals of UX/UI can enhance collaboration, improve product quality, and contribute to a more seamless user experience.
-                        </AccordionContent>
-                    </AccordionItem>
-                </Accordion>
+                    <Accordion type="single" collapsible className="bg-white rounded-lg shadow-md m-2 p-1">
+                        <AccordionItem value="item-1">
+                            <AccordionTrigger className="px-4 py-3  hover:no-underline">Do I need UX/UI experience?</AccordionTrigger>
+                            <AccordionContent className="px-10 py-2 text-gray-600">
+                                UX/UI experience is essential for design-specific roles, other positions benefit from at least a basic understanding of these principles. Investing time in learning the fundamentals of UX/UI can enhance collaboration, improve product quality, and contribute to a more seamless user experience.
+                            </AccordionContent>
+                        </AccordionItem>
+                    </Accordion>
                 ))}
             </div>
             <Card className="mt-6 bg-white">

@@ -5,7 +5,7 @@ import { IoIosArrowDown } from "react-icons/io";
 
 export const Navbar: React.FC = () => {
   return (
-    <nav className="bg-black text-white p-6">
+    <nav className="bg-custom-violet text-white p-6">
       <div className="container mx-auto flex justify-between items-center">
 
         <div className="flex items-center">

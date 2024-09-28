@@ -1,4 +1,5 @@
 import React from "react";
+import { OverView } from "./ContentSection/OverView";
 
 export const ContentSection : React.FC = () => {
     return (
@@ -7,8 +8,8 @@ export const ContentSection : React.FC = () => {
                 <div className="w-1/4 bg-gray-700" >
 
                 </div>
-                <div className="w-3/4 bg-black" >
-
+                <div className="w-3/4 " >
+                    <OverView />
                 </div>
             </section>
         </>

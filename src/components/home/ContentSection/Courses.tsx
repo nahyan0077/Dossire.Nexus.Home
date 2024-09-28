@@ -16,7 +16,7 @@ export const Courses: React.FC = () => {
                     <h2 className="text-2xl font-semibold mt-2 mb-2">
                         Accelerate your career
                     </h2>
-                    <h2 className="text-3xl font-semibold mt-2 mb-4">
+                    <h2 className="text-2xl font-semibold mt-2 mb-4">
                         in a <span className="text-gray-500">UX/UI bootcamp</span>
                     </h2>
                     <p className="text-xs text-gray-700 mb-6">

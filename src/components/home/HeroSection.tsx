@@ -12,16 +12,16 @@ export const HeroSection: React.FC = () => {
 
         <div className="flex items-center gap-2">
           <img src={studentAvatars} alt="Students" className="h-6 md:h-8" />
-          <p className="text-sm md:text-lg">+ 250 students enrolled</p>
+          <p className="text-sm md:text-lg text-gray-400 p-2 md:p-0">+ 250 students enrolled</p>
         </div>
 
-        <p className="text-xs md:text-gray-400">
+        <p className="text-xs text-gray-400">
           This Deca-dimensional program is about Art, Design,
           Creativity, Software, Aesthetics, Teaching,
           Communication, Sales, Branding and Marketing.
         </p>
 
-        <Button className="bg-white text-black px-6 py-2 text-sm md:text-base font-semibold rounded-full">
+        <Button className="bg-white text-black px-6 py-2 text-sm md:text-base font-semibold ">
           Get in touch
         </Button>
       </div>

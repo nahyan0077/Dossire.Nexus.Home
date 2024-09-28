@@ -16,7 +16,7 @@ export const Posts : React.FC = () => {
             <h2 className="text-xs font-semibold text-gray-500 tracking-wide uppercase">Posts</h2>
             <h2 className="text-2xl font-semibold mt-2 mb-4">Learn live with industry experts</h2>
 
-            <p className="text-base text-gray-700 mb-6">
+            <p className="text-xs text-gray-700 mb-6">
                 During our Bootcamp you’ll dive into live classes with a team of Design teachers who are actively rockin’ their roles as Creative Directors, Brand Architects, and more.
             </p>
 

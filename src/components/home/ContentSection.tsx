@@ -12,17 +12,17 @@ export const ContentSection: React.FC = () => {
                 <div 
                     className="bg-white rounded-3xl shadow-md p-6 flex flex-col border-l-2 mt-10 sticky top-40"
                 >
-                    <h2 className="text-xl font-semibold mb-4 flex items-center">
+                    <h2 className="text-md font-semibold mb-4 flex items-center">
                         <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
                         Artpreneur Program
                     </h2>
-                    <ul className="space-y-3 mb-6 flex-grow ml-5">
+                    <ul className="space-y-3 mb-6 flex-grow ml-5 text-sm">
                         <li className="text-gray-600 hover:text-gray-900 cursor-pointer">Overview</li>
                         <li className="text-gray-600 hover:text-gray-900 cursor-pointer">Posts</li>
                         <li className="text-gray-600 hover:text-gray-900 cursor-pointer">Next Batches</li>
                         <li className="text-gray-600 hover:text-gray-900 cursor-pointer">FAQ</li>
                     </ul>
-                    <Button className="w-full bg-black text-white hover:bg-gray-800 py-6">
+                    <Button className="w-full bg-black text-white hover:bg-gray-800 ">
                         Get in touch
                     </Button>
                 </div>

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import logo from "@/assets/footer-logo.svg";
-import { Button } from "@/components/ui/button";
 import { IoIosArrowDown } from "react-icons/io";
 import { HiMenu, HiX } from "react-icons/hi";
+import { GetInTouchModal } from "@/pages/GetInTouch";
 
 export const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -38,9 +38,7 @@ export const Navbar: React.FC = () => {
         </div>
 
         <div className="hidden md:block">
-          <Button className="bg-white text-black hover:bg-gray-200 text-sm">
-            Get in Touch
-          </Button>
+        <GetInTouchModal />
         </div>
       </div>
     </nav>

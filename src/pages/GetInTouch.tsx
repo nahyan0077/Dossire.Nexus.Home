@@ -13,12 +13,16 @@ import {
 import { validationSchema } from '@/utils/ValidationSchema';
 import { toast } from 'sonner'
 
+interface initialValues {
+    title: string,
+    body: string
+}
 
 export const GetInTouchModal: React.FC = () => {
 
-    let initialValues = { title: '', body: '' }
+    let initialValues: initialValues = { title: '', body: '' }
 
-    const handleSubmit = (values: any,{ resetForm }: any) => {
+    const handleSubmit = (values: initialValues,{ resetForm }: FormikHelpers <initialValues> ) => {
         console.log(values);
         toast.success("new post added...")
         resetForm()

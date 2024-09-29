@@ -1,5 +1,5 @@
 import React from 'react';
-import { Formik, Form, Field, ErrorMessage } from 'formik';
+import { Formik, Form, Field, ErrorMessage, FormikHelpers } from 'formik';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -15,9 +15,13 @@ import { toast } from 'sonner'
 
 
 export const GetInTouchModal: React.FC = () => {
-    const handleSubmit = (values: any) => {
+
+    let initialValues = { title: '', body: '' }
+
+    const handleSubmit = (values: any,{ resetForm }: any) => {
         console.log(values);
         toast.success("new post added...")
+        resetForm()
     }
 
   return (
@@ -32,7 +36,7 @@ export const GetInTouchModal: React.FC = () => {
           <div className="w-full md:w-1/2 p-6 md:p-10 lg:p-20">
             <h2 className="text-2xl font-bold mb-6">Add post</h2>
             <Formik
-              initialValues={{ title: '', body: '' }}
+              initialValues={initialValues}
               validationSchema={validationSchema}
               onSubmit={handleSubmit}
             >

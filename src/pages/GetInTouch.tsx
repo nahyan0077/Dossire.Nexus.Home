@@ -15,7 +15,6 @@ import { toast } from 'sonner'
 
 
 export const GetInTouchModal: React.FC = () => {
-
     const handleSubmit = (values: any) => {
         console.log(values);
         toast.success("new post added...")
@@ -37,7 +36,7 @@ export const GetInTouchModal: React.FC = () => {
               validationSchema={validationSchema}
               onSubmit={handleSubmit}
             >
-              {({ isSubmitting, values }) => (
+              {({values }) => (
                 <Form className="space-y-4">
                   <div>
                     <label htmlFor="title" className="block text-sm font-medium text-gray-700">Title</label>
@@ -45,24 +44,20 @@ export const GetInTouchModal: React.FC = () => {
                     <ErrorMessage name="title" component="div" className="text-red-500 text-xs mt-1" />
                   </div>
                   <div>
+                    <div className='flex justify-between items-center' >
+
                     <label htmlFor="body" className="block text-sm font-medium text-gray-700">Body</label>
+                        <span className=" right-2  text-xs  text-gray-500">{values.body.length}/100</span>
+                    </div>
                     <div className="relative mt-1">
-                      <Field
-                        as={Textarea}
-                        id="body"
-                        name="body"
-                        placeholder="Type your body text here..."
-                        className="pr-8"
-                        rows={4}
-                      />
-                      <span className="absolute right-2 bottom-2 text-sm text-gray-500">{values.body.length}/100</span>
+                      <Field as={Textarea} id="body" name="body" placeholder="Type your body text here..." className="pr-8" rows={4} />
                       <button type="button" className="absolute top-2 right-2 text-gray-400 hover:text-gray-600">
                         <X size={16} />
                       </button>
                     </div>
                     <ErrorMessage name="body" component="div" className="text-red-500 text-xs mt-1" />
                   </div>
-                  <Button type="submit" className="w-full bg-black text-white" disabled={isSubmitting}>
+                  <Button type="submit" className="w-full bg-black text-white" >
                     Submit
                   </Button>
                 </Form>
